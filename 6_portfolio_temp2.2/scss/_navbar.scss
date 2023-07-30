@@ -1,0 +1,16 @@
+@use './custom' as *;
+@use './mixins' as *;
+
+.menu {
+    // max-width: 100%;
+    @include bg-gradient;
+
+    li { padding: 0 0.7em; }
+    
+    a {
+        color: white !important;
+        font-weight: 600;
+        text-transform: capitalize;
+        padding: 1em;
+    }
+}

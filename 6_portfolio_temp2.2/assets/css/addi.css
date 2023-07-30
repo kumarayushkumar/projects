@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+@media (min-width: 992px) {
+    .navdiv {
+        margin-right: 0;
+        margin-left: 16em;
+        width: 10%;
+    }
+}
+
+@media (max-width: 991px) {
+    .btn-rounded {
+        margin-right: auto;
+    }
+}
+
+.wave {
+    margin-bottom: -0.1rem;
+}

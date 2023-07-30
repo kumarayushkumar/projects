@@ -1,0 +1,9 @@
+{
+    "name": "kumar/samp_3",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    }
+}

@@ -1,0 +1,18 @@
+@use './custom' as *;
+
+@mixin bg-gradient {
+    background: linear-gradient(to right, rgba($primary,0.95), rgba($secondary,0.95));
+}
+
+@mixin abs-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@mixin trans-prop {
+    transition: 750ms;
+    transition-timing-function: ease-in-out;
+    transition-property: all;
+}

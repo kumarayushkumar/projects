@@ -1,0 +1,72 @@
+@use './custom' as *;
+
+.display-2 {
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    
+    .name--intro {
+        display: inline-block;
+        font-weight: 700;
+    }
+
+    .description--intro {
+        margin-top: 1rem;
+        font-size: 1rem;
+        display: block;
+        text-transform: none;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 1.4rem;
+            display: block;
+        }
+    }    
+}
+
+.headingline::before {
+    content: "";
+    width: 10rem;
+    height: 0.12rem;
+    display: block;
+    background-color: $primary;
+    margin: auto;
+}
+
+.headingline::after {
+    content: "";
+    width: 1.8rem;
+    height: 0.475rem;
+    display: block;
+    background-color: $primary;
+    margin: auto;
+}
+
+.display-3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.border-right {
+    border-right: 0;
+    @include media-breakpoint-up(sm) {
+        border-right: 0.1rem solid $gray-400;
+        height: 100%;
+    }
+}
+
+.services--title, .form--title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    display: block;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, rgba($primary,0.95), rgba($secondary,0.95));
+    -webkit-text-fill-color: transparent;
+
+    @include media-breakpoint-up(lg) { font-size: 1.75rem; }
+
+}
+
+.gradient {
+    background: linear-gradient(to right, rgba($primary,0.95), rgba($secondary,0.95));
+}
